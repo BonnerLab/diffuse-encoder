@@ -31,10 +31,10 @@ TTA/
 ## Getting Statred with Demo
 
 It is recommended to use environment files to manage your project dependencies. However, if you only need a quick start or a basic understanding, you should be able to run demo/demo.ipynb in a standard Python environment with commonly used packages:
-
 ```
-pip install torch pandas
+pip install torch numpy pandas matplotlib torchvision pillow scikit-learn tqdm
 ```
+The data utilized for the demo is from [The Nature Scenes Dataset (NSD)](http://naturalscenesdataset.org/). If you want to use the data or would like to access the full dataset, please get [access to the NSD](https://docs.google.com/forms/d/e/1FAIpQLSduTPeZo54uEMKD-ihXmRhx0hBDdLHNsVyeo_kCb8qbyAkXuQ/viewform).
 
 ## Getting Started With Implemantations
 
