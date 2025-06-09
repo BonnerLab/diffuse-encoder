@@ -7,7 +7,7 @@ This repository is for [Neural networks and brains share the gist but not the de
 
 The repository includes two parts:
 1. A demo explains the pipeline how Test-Time Augmentation (TTA) could improve model-brain similarity. This demo only requires some minimal and common packages to run so that users could an easy path to understand the essential ideas of our work;
-2. An implementation with information could help reproduce all experiments, which would require two external packages called bonner-libarary [package link](https://github.com/BonnerLab/bonner-libraries) and Deepjuice (You could contact with Colin Conwell for more information). This part is still under development.
+2. An implementation with information could help reproduce all experiments, which would require two external packages called [bonner-libraries](https://github.com/BonnerLab/bonner-libraries) and Deepjuice (You could contact with Colin Conwell for more information). This part is still under development.
 
 The detailed outline for the repository would be:
 ```
@@ -87,6 +87,6 @@ In default, it will calculate the encoding score of Alexnet for original images 
 The bibtex for [the paper](https://openreview.net/forum?id=DtEeVWfgNM&noteId=DtEeVWfgNM) would be provided soon.
 
 ## Contact
-1. For bonner-libarary [bonner-libarary](https://github.com/BonnerLab/bonner-libraries), you might need to read information for this package if you have met some expected;
+1. For [bonner-libraries](https://github.com/BonnerLab/bonner-libraries), you might need to read information for this package if you have met some expected;
 2. For DeepJuice, you could contact Colin Conwell;
 3. For any inquiries, you could contact Yingqi Rong (yrong12@jh.edu) or raise an issue.
