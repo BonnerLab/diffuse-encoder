@@ -10,7 +10,7 @@ The repository includes two parts:
 2. An implementation with information could help reproduce all experiments, which would require two external packages called bonner-libarary [package link](https://github.com/BonnerLab/bonner-libraries) and Deepjuice (You could contact with Colin Conwell for more information). This part is still under development.
 
 The detailed outline for the repository would be:
-
+```
 TTA/
 ├── data/                  # Raw and processed data
 ├── demo/                  # Demo codes
@@ -26,6 +26,7 @@ TTA/
 └── pyproject.toml         # Package manager
 ├── README.md              # Project overview
 └── requirements.txt       # Dependencies
+```
 
 ## Getting Statred with Demo
 
@@ -47,7 +48,7 @@ Then, if there are any updates about the project, you can git pull the project a
 ```
 conda env update -n environment_name_1 -f environment.yml
 ```
-Notice: functions in this conda environment is largely built on a package called bonner-libarary [package link](https://github.com/BonnerLab/bonner-libraries). Therefore, you might need to read information for this package if you have met some expected issues, which can be attributed to this package.
+Notice: functions in this conda environment is largely built on a package called [bonner-libarary](https://github.com/BonnerLab/bonner-libraries). Therefore, you might need to read information for this package if you have met some expected issues, which can be attributed to this package.
 
 (2) For the purpose of handling neural networks, aligning representation between two systems and general visulization, we use a powerful toolbox called DeepJuice(the latest branch). You could contact with Colin Conwell for more information and set another conda environment for DeepJuice. If you only want to reproduce the result and plot based on .csv files in the provided results folder, to set an exact conda environment is not required. Notice: the plotting code still relies on some functions from DeepJuice. However, it's expected to be easily reproduced for everyone when this repo get published. We can call it environment_name_2.
 
@@ -71,7 +72,7 @@ If you want to create a sample directory for 1000 images for further demonstrati
 conda activate environment_name_1
 python /script/diffuse_encoder_env/synthesize_images_diffusers.py --experiment 2  --output test --NSD_shared Full --strength 1 --guidance-scale 7.5
 ```
-This code will quickly syntheize several image variations based on the NSD shard 1000 images only by text information( image weight = 1 - strength. If guidance_scale < 1, the text information won't be taken account of.).
+This code will quickly syntheize several image variations based on the NSD shard 1000 images only by text information( image weight = 1 - strength. If guidance_scale < 1, the text information won't be taken account of).
 
 Do the encoding procedure
 ```
@@ -84,6 +85,6 @@ In default, it will calculate the encoding score of Alexnet for original images 
 The bibtex for [the paper](https://openreview.net/forum?id=DtEeVWfgNM&noteId=DtEeVWfgNM) would be provided soon.
 
 ## Contact
-1. For bonner-libarary [package link](https://github.com/BonnerLab/bonner-libraries), you might need to read information for this package if you have met some expected;
+1. For bonner-libarary [bonner-libarary](https://github.com/BonnerLab/bonner-libraries), you might need to read information for this package if you have met some expected;
 2. For DeepJuice, you could contact Colin Conwell;
-3. For any inquiries, you could contact Yingqi Rong(yrong12@jh.edu) or raise an issue.
+3. For any inquiries, you could contact Yingqi Rong (yrong12@jh.edu) or raise an issue.
