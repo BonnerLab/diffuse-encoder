@@ -1,0 +1,8 @@
+# installation artifacts
+*.egg-info
+
+# cache
+*.pyc
+
+# other
+*-jvsc-*

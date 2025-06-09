@@ -1,0 +1,85 @@
+[build-system]
+    requires      = ["setuptools", "setuptools-scm"]
+    build-backend = "setuptools.build_meta"
+
+[project]
+    name = "Test-Time Augmentation for Model-Brain Similarity"
+    description = "Project investigating how we can utilize the Test-Time Augmentation to improve model-brain similarity"
+    readme = "README.md"
+    requires-python = ">=3.10"
+    license = { file = "LICENSE" }
+    authors = [{ name = "Yingqi Rong", email = "yrong12@jh.edu" }]
+    keywords = ["Bonner Lab", "dimensionality", "visual cortex", "representations"]
+    classifiers = ["Development Status :: 4 - Beta", "Intended Audience :: Science/Research", "License :: OSI Approved :: GNU General Public License v3 (GPLv3)", "Natural Language :: English", "Operating System :: POSIX :: Linux", "Programming Language :: Python :: 3", "Topic :: Scientific/Engineering", "Typing :: Typed"]
+    urls = { repository = "https://github.com/BonnerLab/diffuse-encoder"}
+    dependencies = [
+        "loguru",
+        "spacy",
+        "more-itertools",
+        "GitPython",
+        "tqdm",
+        "numpy",
+        "torch",
+        "sentence-transformers",
+        "pandas",
+        "xarray",
+        "netCDF4",
+        "dask",
+        "scipy",
+        "umap-learn",
+        "Pillow",
+        "matplotlib",
+        "seaborn",
+        "colorcet",
+        "svgutils",
+        "scikit-learn",
+        "nilearn",
+        "notebook",
+        "ipywidgets",
+        "diffusers",
+        "transformers",
+        "accelerate",
+        "scipy",
+        "safetensors",
+        "opencv-contrib-python",
+        "pycocotools",
+        "clip",
+        "protobuf",
+    ]
+    dynamic = ["version"]
+
+[project.optional-dependencies]
+    dev = ["pylint", "black", "mypy", "types-requests", "pytest", "bandit", "tox", "sphinx", "jupytext", "line-profiler", "memory-profiler", "snakeviz"]
+
+[tool.black]
+    preview = true
+
+[tool.mypy]
+    namespace_packages          = true
+    ignore_missing_imports      = true
+    disallow_untyped_defs       = true
+    check_untyped_defs          = true
+    disallow_untyped_decorators = true
+
+    # disallow_any_unimported = true
+    # disallow_any_expr = true
+    # disallow_any_decorated = true
+    # disallow_any_explicit = true
+    # disallow_any_generics = true
+    # disallow_subclassing_any = true
+
+    warn_redundant_casts = true
+    warn_unused_ignores  = true
+    warn_no_return       = true
+    warn_return_any = true
+    warn_unreachable = true
+
+    allow_redefinition = true
+
+[tool.jupytext.formats]
+    "notebooks" = "ipynb"
+    "scripts"   = "py:percent"
+
+[tool.jupytext]
+    notebook_metadata_filter = "-all"
+    cell_metadata_filter     = "-all"

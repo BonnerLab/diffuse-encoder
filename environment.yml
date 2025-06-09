@@ -1,0 +1,10 @@
+name: diffuse-encoder
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+    - "-r requirements.txt"
+variables:  # please use these environment variables so we can have a shared torch and dataset cache
+  TORCH_HOME: "/data/shared/torch"
+  BONNER_BRAINIO_HOME: "/data/shared/brainio"
+  BONNER_DATASETS_HOME: "/data/shared/datasets"
