@@ -48,13 +48,13 @@ Then, if there are any updates about the project, you can git pull the project a
 ```
 conda env update -n environment_name_1 -f environment.yml
 ```
-Notice: functions in this conda environment is largely built on a package called [bonner-libarary](https://github.com/BonnerLab/bonner-libraries). Therefore, you might need to read information for this package if you have met some expected issues, which can be attributed to this package.
+Notice: functions in this conda environment is largely built on a package called [bonner-libraries](https://github.com/BonnerLab/bonner-libraries). Therefore, you might need to read information for this package if you have met some expected issues, which can be attributed to this package.
 
 (2) For the purpose of handling neural networks, aligning representation between two systems and general visulization, we use a powerful toolbox called DeepJuice(the latest branch). You could contact with Colin Conwell for more information and set another conda environment for DeepJuice. If you only want to reproduce the result and plot based on .csv files in the provided results folder, to set an exact conda environment is not required. Notice: the plotting code still relies on some functions from DeepJuice. However, it's expected to be easily reproduced for everyone when this repo get published. We can call it environment_name_2.
 
 ### Notebooks to help you understand how diffusion model can manipulate images in different way.
 
-Feel free to walk through /notebook/tutorial_with_diffusion.ipynb. You have a taste on how we manipulate images for the project. However, the development of diffusion is moving so fast. You could check many useful resources to know more advanced methods you could have a try.
+Feel free to walk through /notebooks/tutorial_with_diffusion.ipynb. You have a taste on how we manipulate images for the project. However, the development of diffusion is moving so fast. You could check many useful resources to know more advanced methods you could have a try.
 
 ### A quick walkthrough for essential functions
 
@@ -63,7 +63,7 @@ When you get this Git repo in your machine and you have set the conda environmen
 For a quick demonstration for you can synthesize images for this project,
 ```
 conda activate environment_name_1
-python /script/diffuse_encoder_env/synthesize_images_diffusers.py --experiment 2  --output test --NSD_shared Sample
+python /scripts/diffuse_encoder_env/synthesize_images_diffusers.py --experiment 2  --output test --NSD_shared Sample
 ```
 This code will quickly syntheize several image variations based on the first 5 NSD Stimuli ranked by their COCO Id in a folder called *test*. You could also set output to be demo/demo_data/augmentation if you want to utilize the demo.ipynb for a demonstration for further analysis.
 
