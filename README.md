@@ -48,7 +48,7 @@ Then, if there are any updates about the project, you can git pull the project a
 ```
 conda env update -n environment_name_1 -f environment.yml
 ```
-Notice: functions in this conda environment is largely built on a package called [bonner-libraries](https://github.com/BonnerLab/bonner-libraries). Therefore, you might need to read information for this package if you have met some expected issues, which can be attributed to this package.
+Notice: functions in this conda environment is largely built on a package called [bonner-libraries](https://github.com/BonnerLab/bonner-libraries). Therefore, you might need to read information for this package if you have met some unexpected issues, which can be attributed to this package.
 
 (2) For the purpose of handling neural networks, aligning representation between two systems and general visulization, we use a powerful toolbox called DeepJuice(the latest branch). You could contact with Colin Conwell for more information and set another conda environment for DeepJuice. If you only want to reproduce the result and plot based on .csv files in the provided results folder, to set an exact conda environment is not required. Notice: the plotting code still relies on some functions from DeepJuice. However, it's expected to be easily reproduced for everyone when this repo get published. We can call it environment_name_2.
 
@@ -87,6 +87,6 @@ In default, it will calculate the encoding score of Alexnet for original images 
 The bibtex for [the paper](https://openreview.net/forum?id=DtEeVWfgNM&noteId=DtEeVWfgNM) would be provided soon.
 
 ## Contact
-1. For [bonner-libraries](https://github.com/BonnerLab/bonner-libraries), you might need to read information for this package if you have met some expected;
+1. For [bonner-libraries](https://github.com/BonnerLab/bonner-libraries), you might need to read information for this package if you have met some unexpected issues;
 2. For DeepJuice, you could contact Colin Conwell;
 3. For any inquiries, you could contact Yingqi Rong (yrong12@jh.edu) or raise an issue.
