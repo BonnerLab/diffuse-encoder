@@ -1,7 +1,7 @@
 # Test-Time Augmentation for Model-Brain Similarity
 ---
 ![Schematic](docs/schematic.png)
-This repository is for [Neural networks and brains share the gist but not the details: a surprising benefit of image ensembles for encoding models of visual cortex](https://openreview.net/forum?id=DtEeVWfgNM&noteId=DtEeVWfgNM).
+This repository is for [Neural networks and brains share the gist but not the details](https://openreview.net/forum?id=DtEeVWfgNM&noteId=DtEeVWfgNM).
 
 ## Repository Structure
 
