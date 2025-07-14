@@ -84,7 +84,17 @@ python scripts/deepjuice_env/model_brain/encoding_function.py
 In default, it will calculate the encoding score of Alexnet for original images and save the /result/benchmark. You can have a more detailed control on it by setting another image path which is either a folder of 1000 images whose names are f'{COCO_Id}'.jpg. Or it can be a folder which consists of 1000 folders named by COCO ID and containing images in the form image_1.jpg, image_2.jpg,.., and so on. The code above would automatically set the folder in this way.
 
 ## Citations
-The bibtex for [the paper](https://openreview.net/forum?id=DtEeVWfgNM&noteId=DtEeVWfgNM) will be provided soon.
+The bibtex for [the paper](https://openreview.net/forum?id=DtEeVWfgNM&noteId=DtEeVWfgNM) is:
+```
+@inproceedings{
+rong2025neural,
+title={Neural networks and brains share the gist but not the details},
+author={Yingqi Rong and Colin Conwell and Michael Bonner},
+booktitle={8th Annual Conference on Cognitive Computational Neuroscience},
+year={2025},
+url={https://openreview.net/forum?id=DtEeVWfgNM}
+}
+```
 
 ## Contact
 1. For [bonner-libraries](https://github.com/BonnerLab/bonner-libraries), you might need to read information for this package if you have met some unexpected issues;
